@@ -1,0 +1,108 @@
+/* Reset & base styles */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+body {
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    background: linear-gradient(135deg, #eaf280 50%, #e768d4 50%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main container */
+/* .box {
+  background: #8cbbd0;
+  padding: 20px 30px ;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  width: 320px;
+  text-align: center;
+} */
+
+/* Heading */
+h1 {
+    font-size: 24px;
+    /* margin-bottom: 10px; */
+    align-items: center;
+    /* margin-top: 5px;  */
+    background: #e8e9ea;
+    padding: 20px 30px;
+    /* border-radius: 8px; */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    width: 320px;
+    text-align: left;
+
+}
+
+.tasks {
+    font-size: 5px;
+    background: #e8e9ea;
+    padding: 20px 30px;
+}
+
+/* Task list */
+.tasks .item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: flex-start;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+
+.tasks input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+.tasks p {
+    margin: 0;
+    font-size: 16px;
+    color: #1d1818;
+}
+
+/* Completed task style (if you use JavaScript later) */
+.tasks input[type="checkbox"]:checked+p {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* Form input + button */
+form {
+    display: flex;
+    margin-top: 15px;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+form input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    background: #f0f0f0;
+}
+
+form button {
+    margin-left: 10px;
+    background-color: #a378d1;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background-color: #8f65c2;
+}
