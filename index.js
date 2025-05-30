@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const app = express();
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static("public"));
+app.use(express.static("Public"));
 const port = 4000;
 const mongoose = require('mongoose');
 mongoose.connect("mongodb+srv://keerthibirudu2003:gvISlr6i6UPwMhkz@todoapp.s3y7hoq.mongodb.net/")
